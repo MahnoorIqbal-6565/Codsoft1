@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital@1&display=swap');
+*{
+    font-family: 'Pathway Extreme', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+    line-height: 1.5;
+}
+
+.html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.header{
+    font-size: 20px;
+    position: fixed;
+    top: 0;bottom: 0;left: 0;
+    background-color: black;
+    width: 350px;height: 655px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3rem 3rem;
+}
+.nav-bar ul li{
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.nav-bar ul li a{
+    color: white;
+}
+header .nav-bar a:hover{
+    letter-spacing: 0.2rem;
+    color: gold;
+}
+.icon{
+    font-size: 30px;
+    color: gold;
+    padding-right: 15px;
+}
+.header .logo{
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.header .logo span{
+    font-size: 28px;
+    text-transform: uppercase;
+    color: gold;
+}
+.followup{
+    display: inline;
+   
+}
+.followup a{
+    margin-bottom: 5px;
+}
+.followup a:hover{
+    color: white;
+}
+.icon1{
+    color: white;
+    font-size: 15px;
+    }
+
+.home{
+    padding: 1rem 5%;
+    display :flex;
+    gap: 80px;  
+    flex-direction: row;
+    background-color: white;
+    height: 660px;
+ 
+}
+.content h3 span{
+    color: rgb(252, 215, 4);
+    font-size: 30px;
+}
+.content{
+    font-size: 16px;
+    padding-top: 120px;
+    width: 120%;
+    padding-left: 350px;
+    text-align: justify; 
+}
+.home .image{
+    flex: 1 1 40rem;   
+}
+.home .image img{
+    margin-top: 200px;
+    transition: width 2s, height 4s;
+}
+.image img:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0, 3, 3, 0.5);
+  opacity: 0.8;
+  width: 300px;
+  height: 330px;
+  margin-top: 180px;
+}
+.btn{
+    font-size: 20px;
+    color: gold;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Responsive navigation styles for screens up to 768px */
+@media (max-width: 768px) {
+    .header {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+  
+    .nav-bar {
+      display: flex;
+      align-items: center;
+    }
+  
+    .nav-bar ul {
+      flex-direction: row;
+    }
+  
+    .nav-bar ul li {
+      margin: 0 10px;
+    }
+  }

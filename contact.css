@@ -1,0 +1,30 @@
+.forms{
+    background-color: white;
+    padding: 20px;
+    margin-left: 350px;
+    
+   
+}
+.sub{
+    margin-left: 220px;
+    height: 25px;
+    width: 100px;
+}
+.outer{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map{
+ border: 2px solid #fff;
+ background: rgba(255, 255, 255, 0.2);
+
+}
+.map iframe{
+    margin-top: 10px;
+    height: 580px;
+    width:400px;
+}
+
+

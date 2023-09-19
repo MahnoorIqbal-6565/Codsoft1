@@ -1,0 +1,120 @@
+.feature-box .box {
+    position: relative;
+    overflow: hidden;
+  
+  }
+
+  /* Add styles for the initial color spot at the corner */
+  .feature-box .box:before {
+    content: "";
+    width:100px;
+    height: 100px;
+    background-color: #f9b234;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+    left: -25px;
+    border-radius: 60%;
+    transition: all 0.5s ease;
+  }
+  
+  .feature-box .box:hover:before {
+    width: 100%; /* Expand the color spot to cover the whole box */
+    height: 100%;
+    border-radius: 0%;
+    top: 0;
+    left: 0;
+  }
+  
+  .feature-box-container {
+    margin-left: 380px;
+    margin-top: 20px;
+  }
+  
+  .feature-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    margin: 0 10px 15px;
+    overflow: hidden;
+    border-radius: 28px;
+    width: 300px;
+    height: 220px;
+    text-align: left;
+  }
+  
+  .box h2 {
+    /* margin-bottom: 0px; */
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 28px;
+    color: #000000;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .box p {
+    font-size: 16px;
+    color: #000000;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .feature-box-header {
+    text-align: center;
+    width: 1000px;
+  }
+  
+  .feature-box-header h1 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .feature-box-header p {
+    font-size: 24px;
+    color: gold;
+    font-weight: 600;
+  }
+  
+  /* Add styles for the boxes */
+  .feature-box .box {
+    background-color: rgb(177, 175, 163);
+    padding: 30px 20px;
+    position: relative;
+  }
+  
+  .feature-box .box:hover,
+  .feature-box .box:hover h2,
+  .feature-box .box:hover p {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+
+  
+  .feature-box .box:nth-child(2n):before {
+    background-color: #3ecd5e;
+  }
+  
+  .feature-box .box:nth-child(3n):before {
+    background-color: #e44002;
+  }
+  
+  .feature-box .box:nth-child(4n):before {
+    background-color: #952aff;
+  }
+  
+  .feature-box .box:nth-child(5n):before {
+    background-color: #cd3e94;
+  }
+  
+  .feature-box .box:nth-child(6n):before {
+    background-color: #4c49ea;
+  }
+  
+  
+  
+  
